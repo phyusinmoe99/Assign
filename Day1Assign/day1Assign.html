@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day1 Assignment</title>
+    <style>
+      .menu {
+        background-color: purple;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+      }
+      .menu ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: white;
+      }
+      .section1 {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
+      article {
+        width: 350px;
+        height: 150px;
+        background-color: brown;
+      }
+      .section2 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th {
+        background-color: red;
+      }
+      tr:nth-child(even) {
+        background-color: #f30fc6;
+      }
+      .section3 {
+        background-color: black;
+        color: white;
+      }
+      footer p {
+        background-color: brown;
+        text-align: center;
+        color: white;
+        height: 30px;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <h2>My Webpage</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <img src="../img/bg.jpg" alt="Day1" width="100%" height="250px" />
+    </div>
+    <main>
+      <section class="section1">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+      </section>
+      <section class="section2">
+        <table style="width: 75%; height: 200px">
+          <tr>
+            <th>NO</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Remark</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mg Mg</td>
+            <td>Myanmar</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mg Hla</td>
+            <td>English</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mg Ba</td>
+            <td>Myanmar</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mg Mg</td>
+            <td>Math</td>
+            <td>50</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <div>
+          <a href="#">Outside Link</a>
+        </div>
+        <div>
+          <a href="#">inside Link One</a>
+          <a href="#">inside Link Two</a>
+        </div>
+      </section>
+      <section class="section3">
+        <ol>
+          <li>Apples</li>
+          <li>Oranges</li>
+          <li>
+            <ol>
+              <li>Apples</li>
+              <li>Oranges</li>
+              <li>Grapes</li>
+              <li>Mangos</li>
+              <li>
+                Bananas
+                <ol>
+                  <li>Mangos</li>
+                  <li>Bananas</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2023 All rights reserved.</p>
+    </footer>
+  </body>
+</html>

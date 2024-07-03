@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/registrationStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter First Name"  class="inputClass" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name"  class="inputClass" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email"  class="inputClass" required>
+            </div>
+            <div>
+                <label for="birthDate">Birth of Date:</label>
+                <input type="date" name="BirthDate" id="birthDate"  class="inputClass" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number"  class="inputClass" required>
+            </div>
+            <div>
+                <label for="color">Choose a Color:</label>               
+                <select id="color" name="color">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                </select>
+            </div>
+            <div>
+                <h2>Gender</h2>
+                <div class="radioBtn">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    
+                </div>
+            </div>
+            <div>
+                <h3>Favorite Programming Language</h3>
+                <div>
+                    <input type="checkbox" id="html" name="html" value="html">
+                    <label for="html"> HTML</label>
+                    <input type="checkbox" id="css" name="css" value="css">
+                    <label for="css"> CSS</label>
+                    <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                    <label for="javascript"> Javascript</label>
+                    <input type="checkbox" id="react" name="react" value="react">
+                    <label for="react"> React</label>
+                </div>
+            </div>
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="btn">
+                <button type="reset">Reset</button>
+                <button type="submit">Login</button>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
