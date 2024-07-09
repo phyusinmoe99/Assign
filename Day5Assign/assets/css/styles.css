@@ -13,14 +13,14 @@
   --orange: #e76f51;
 }
 .container {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
 }
 body {
   background-color: rgb(252, 247, 248);
 }
 section {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 a {
   text-decoration: none;
@@ -28,7 +28,7 @@ a {
 }
 /* ---------------------start header section----------------- */
 header {
-  background-image: url(/assets/img/bg1.png);
+  background-image: url(/Day5Assign/assets/img/bg1.png);
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
   width: 100%;
@@ -50,7 +50,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
 }
 nav .list1 {
   width: 70%;
@@ -58,9 +58,6 @@ nav .list1 {
 }
 nav .list2 {
   padding: 20px 0;
-}
-nav .list1 ul li {
-  width: calc((100% / 9) - 9px);
 }
 
 nav .list2 ul li:first-child {
@@ -76,7 +73,7 @@ nav .list2 ul li:last-child {
 .head {
   color: white;
   width: 500px;
-  margin: 50px 350px;
+  margin: 0 auto;
 }
 .head h1 {
   text-align: center;
@@ -125,26 +122,30 @@ nav .list2 ul li:last-child {
 /* ---------------------end body first section----------------- */
 
 /* ---------------------start body second section----------------- */
-
-.sec-2-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--orange);
-  /* position: relative; */
-  margin-left: 600px;
-}
-.sec-2-img img {
-  width: 70px;
-  height: 50px;
-  /* position: absolute; */
-  left: -8px;
+.sec-2-heading {
+  width: 500px;
+  margin: 20px auto;
 }
 .sec-2-heading h2 {
   text-align: center;
   width: 300px;
-  margin: 30px 480px;
+  margin: 0 auto;
 }
+.sec-2-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--orange);
+  position: relative;
+}
+.sec-2-img img {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  left: -8px;
+}
+
 .sec-2-body {
   display: flex;
   flex-wrap: wrap;
@@ -157,9 +158,8 @@ nav .list2 ul li:last-child {
   width: calc((100% / 4) - 15px);
 }
 .sec2-card-img {
-  width: 200px;
-  height: 150px;
-  margin: 20px 45px;
+  width: 80%;
+  margin: 20px auto;
   position: relative;
 }
 .sec2-card-img img {
@@ -175,14 +175,15 @@ nav .list2 ul li:last-child {
   background-color: white;
   border: 0.5px solid white;
   border-radius: 10px;
-  margin: -60px 90px;
+  left: 50px;
+  top: 110px;
 }
 .card-btn {
   background-color: var(--gray);
   border-radius: 20px;
   padding: 10px;
   width: 130px;
-  margin: 20px 0 30px 75px;
+  margin: 20px auto;
 }
 .heart {
   border-radius: 10px;
@@ -191,8 +192,8 @@ nav .list2 ul li:last-child {
   background-color: white;
   text-align: center;
   position: absolute;
-  margin-top: -150px;
-  margin-left: 200px;
+  top: 10px;
+  right: 10px;
 }
 i {
   color: var(--orange);
@@ -204,7 +205,7 @@ i {
   text-align: center;
   width: 150px;
   padding: 10px;
-  margin: 20px 550px;
+  margin: 20px auto;
 }
 .view-all-btn a {
   color: var(--orange);
@@ -214,16 +215,17 @@ i {
 
 .tank {
   width: 100%;
+  position: relative;
 }
 .tank img {
   width: 100%;
   border-radius: 20px;
-  height: 300px;
 }
 .tank-para {
-  margin: -220px 40px;
   width: 500px;
-  position: relative;
+  position: absolute;
+  top: 60px;
+  left: 40px;
 }
 .tank-para h2 {
   margin-bottom: 25px;
@@ -234,8 +236,9 @@ i {
   border-radius: 10px;
   display: flex;
   gap: 5px;
-  padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  width: 350px;
 }
 input {
   border: none;
@@ -243,6 +246,7 @@ input {
 
 .send-img {
   width: 20px;
+  margin-left: 100px;
 }
 /* ---------------------end body third section----------------- */
 
@@ -250,14 +254,16 @@ input {
 
 footer {
   background-color: var(--pink);
-  margin-top: 300px;
-  border-top-left-radius: 70px;
-  border-top-right-radius: 70px;
+  margin-top: 100px;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
 }
 .footer-sec {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+  padding-top: 40px;
+  position: relative;
 }
 .download h3 {
   margin: 20px 20px;
@@ -283,6 +289,20 @@ footer {
   color: black;
 }
 footer p {
+  margin-left: 20px;
+}
+.copy {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+}
+.arr-img {
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: -15px;
+  right: 80px;
 }
