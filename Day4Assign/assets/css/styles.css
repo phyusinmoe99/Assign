@@ -10,6 +10,13 @@ body {
   padding: 0;
   margin: 0;
 }
+section {
+    padding: 40px 0;
+}
+section:nth-child(even) {
+    background-color: antiquewhite;
+}
+/* -------------header----------- */
 header {
   background-color: orange;
 }
@@ -25,26 +32,31 @@ nav ul {
 }
 nav ul li {
   border-right: 0.5px solid white;
+  padding: 8px 0; 
+  width: calc(100% / 3);
+  text-align: center;
 }
 nav ul li:last-child {
     border-right: none;
 }
 nav ul li a {
-  padding: 20px 80px;
   color: white;
   text-decoration: none;
 }
-.section1 {
+/* .section1 {
     margin-top: 20px;
-}
+} */
 
 .card-box {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 }
 .card {
-  width: 30%;
-  padding: 10px;
+    /* 16px margin, 4 boxes and 16*3 / 4  */
+  width: calc((100% / 4) - 12px) ;
+  /* padding: 10px; */
+  
 }
 .card-img {
   background-image: url(../img/cardIm.jpg);
@@ -57,23 +69,23 @@ nav ul li a {
   border: 1px solid var(--red);
   margin-top: 10px;
   padding: 8px;
-  box-shadow: 2px 2px 3px red;
+  box-shadow: 0px 2px 2px 3px red;
+  /* parallelogram */
+  transform: skew(-20deg); 
 }
 .card-btn a {
     color: rgb(11, 11, 11);
     text-decoration: none;
 }
-.parallelogram{
-    transform: skew(-20deg);
-}
+
 
 /* end section1 */
 
-.section2 {
+/* .section2 {
   background-color: bisque;
   margin-top: 20px;
   padding: 10px;
-}
+} */
 .section2 h2 {
     margin-bottom: 20px;
 }
@@ -81,34 +93,41 @@ dt {
   background-color: var(--red);
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 dd {
   padding: 10px;
 }
+dd:nth-of-type(1n+2) {
+    display: none;
+}
+
 
 /* end section2 */
-.section3 {
+/* .section3 {
     margin-top: 20px;
-}
+} */
 .section3 h2 {
     margin-bottom: 20px;
 }
 .card-box2 {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .card2 {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 25%;
-  padding: 20px;
-  margin-right: 10px;
+  width: calc((100% / 3) - 16px);
+  
 }
 .card2 h3 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  line-height: 40px;
 }
 span.small {
   font-size: 15px;
@@ -169,7 +188,8 @@ span.small {
     background-color: rgb(13, 13, 99);
 }
 .btn3, .btn6 {
-    background-color: rgb(6, 49, 6);
+    background-color: 
+    rgb(6, 49, 6);
 }
 footer {
     background-color: black;
