@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+body {
+  background-color: #37231f;
+  min-height: 100vh;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+header .container .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .navigation .left {
+  position: relative;
+}
+header .container .navigation .left a {
+  text-decoration: none;
+  color: white;
+}
+header .container .navigation .left a::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
+header .container .navigation .left a span {
+  color: #fe974c;
+}
+header .container .navigation .right nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header .container .navigation .right nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .container .navigation .right nav ul li a.active {
+  color: #fe974c;
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+}
+.first-section .left-para {
+  width: 50%;
+}
+.first-section .left-para h1 span {
+  color: #fe974c;
+}
+.first-section .left-para p {
+  margin: 20px 0;
+}
+.first-section .left-para .btn a {
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+.first-section .left-para .btn .order-btn {
+  background-color: #fe974c;
+  color: black;
+}
+.first-section .left-para .btn .explore-btn {
+  border: 1px solid #fe974c;
+  color: #fe974c;
+}
+.first-section .left-para .icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.first-section .left-para .icon span {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.first-section .left-para .icon span i {
+  color: black;
+}
+.first-section .right-img {
+  width: 50%;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

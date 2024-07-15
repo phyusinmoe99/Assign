@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import "variables.scss";
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+body {
+    background-color: $primary-color;
+    min-height: 100vh;
+    color: white;
+    font-family: $siliguri-font;
+}
+header {
+    .container {
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                position: relative;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    
+                  &::before {
+                     content: "";
+                     width: 30px;
+                     height: 2px;
+                     background-color: white ;
+                     position: absolute;
+                     top: -8px;
+                     left: 0;
+                  } 
+                  span {
+                    color: $secondary-color;
+                  }   
+                }
+            }
+            .right {
+                nav {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        gap: 20px;
+                        li {                                                
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                &.active {
+                                    color: $secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+       
+        
+
+    }
+    
+    
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    
+    .left-para {
+        width: 50%;
+        h1 {
+            span {
+                color: $secondary-color;
+            }
+        }
+        p {
+            margin: 20px 0;
+        }
+        .btn {
+            
+            a {
+                text-decoration: none;
+                padding: 15px; 
+                display: inline-block;              
+            }
+            .order-btn {
+                background-color: $secondary-color;
+                color: black;
+
+            }
+            .explore-btn {
+                border: 1px solid $secondary-color;
+                color: $secondary-color;
+            }
+            
+
+        }
+        .icon {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            span {
+                display: inline-flex;
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: black;
+                }
+            }
+        }
+    }
+    .right-img {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+
+
