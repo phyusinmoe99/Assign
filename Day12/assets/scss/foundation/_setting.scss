@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Futura PT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Book'),url(../../fonts/FuturaCyrillicBook.woff) format('woff');
+}
+@font-face {
+    font-family: 'Future PT Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Medium'),url(../../fonts/FuturaCyrillicMedium.woff) format('woff');
+}
+@font-face {
+    font-family: 'Future PT Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local( 'Future PT Demi'),url(../../fonts/FuturaCyrillicDemi.woff) format('woff');
+}
+$wrap-inner:1638px;
+$wrap-inner-md:1469px;
+$wrap-inner-sm:1224px;
+
+$font-futura-book:'Futura PT Book';
+$font-futura-medium:'Futura PT Medium';
+$font-futura-demi:'Futura PT Demi';
+
+$white:#FFFFFF;
+$white-op-75:rgba(255,255,255,0.75);
+$black:#000000;
+$black-op-80:rgba(41,47,57,0.8);
+$black-op-58:rgba(19,25,26,0.58);
+$orange:#FF6C2C;
+$blue:#00A2FF;
+$btn-blue:#5EB6E1;
+$blue-op-80:rgba(0,162,255,0.8);
+$purple:#945B9F;
+$gray:#9E9E9E;
+
+$font-size-14:14px;
+$font-size-15:15px;
+$font-size-17:17px;
+$font-size-20:20px;
+$font-size-24:24px;
+$font-size-25:25px;
+$font-size-30:30px;
+
+
+@mixin flexbox($box, $rowgap, $colgap, $jcontent:space-between, $aliginItem:center  ){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: $jcontent;
+        align-items: $aliginItem;
+        gap: $rowgap $colgap; 
+        & > * {
+            width: calc((100% / $box) - $colgap);
+        }
+    
+
+}

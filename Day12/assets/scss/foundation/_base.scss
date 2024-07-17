@@ -1,0 +1,65 @@
+@use './setting';
+
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: setting.$font-futura-book, setting.$font-futura-medium, setting.$font-futura-demi;
+    font-size: setting.$font-size-14;
+    color:setting.$black;
+    background-color: setting.$white;
+
+}
+h1 {
+    font-size: 75px;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 45px;
+}
+h4 {
+    font-size: 30px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 20px;
+}
+
+
+
+.font-20 {
+    font-size: setting.$font-size-20;
+}
+.font-24 {
+    font-size: setting.$font-size-24;
+}
+.font-30 {
+    font-size: setting.$font-size-30;
+}
+.font-45 {
+    font-size: 45px;
+}
+img {
+    max-width: 100%;
+}
+.font-orange {
+    color: setting.$orange;
+}
+.font-gray {
+    color: setting.$gray;
+}
+.font-white {
+    color:setting.$white;
+}
+.bg-black {
+    background-color: setting.$black;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+

@@ -1,0 +1,41 @@
+@use '../../foundation/setting';
+
+
+.c-cmn-btn {
+    display: inline-flex;
+    min-width: 300px;
+    min-height: 92px;
+    font-size: setting.$font-size-30;
+    border-radius: 10px;
+    background-color: setting.$btn-blue;
+    justify-content: center;
+    align-items: center;    
+    text-decoration: none;
+    color: setting.$black;
+    &--lg {
+        min-width: 383px;
+        
+    }
+    &--sm {
+        min-width: 243px;
+        min-height: 74px ;
+    }
+    &--xs {
+        min-width: 137px;
+        min-height: 39px;
+    }
+    &--square {
+        border-radius: 0;
+    }
+    &--orange {    
+        background-color: setting.$orange;    
+    }
+    &--purple {    
+        background-color: setting.$purple;    
+    }
+    &--blue {    
+        background-color: setting.$btn-blue;    
+    }
+
+
+}

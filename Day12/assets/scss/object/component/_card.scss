@@ -1,0 +1,21 @@
+@use '../../foundation/setting';
+
+
+    
+    .c-bodycard{
+              
+        position: relative;
+        &__text{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            transform: translate(0,-50%);
+            text-align: center;
+            color: setting.$white;
+            h6 {
+                margin: 20px 10px;
+            }        
+        }
+        
+    }
+   

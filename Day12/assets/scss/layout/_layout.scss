@@ -1,0 +1,19 @@
+@use '../foundation/setting';
+
+@mixin innerWidth($width){
+    max-width: $width;
+    margin:0 auto;
+    padding:0 16px;
+
+}
+
+.l-wrap-inner {
+    @include innerWidth(setting.$wrap-inner);
+    // max-width: setting.$wrap-inner;
+}
+.l-wrap-inner-md {
+    @include innerWidth(setting.$wrap-inner-md);
+}
+.l-wrap-inner-sm {
+    @include innerWidth(setting.$wrap-inner-sm);
+}

@@ -1,0 +1,115 @@
+@use './../../foundation/setting';
+
+.p-banner {
+    
+    height: 100vh;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% , 100%;
+    position: relative;
+    &_content {
+        width: 913px;
+        position:absolute;
+        top: 50%;
+        transform: translate(0 , -50%);
+        margin-left: 150px;
+    }
+    &_title {
+        font-size: setting.$font-size-30;
+        color: setting.$white-op-75;
+    }
+    h1 {
+        color: setting.$white;
+        padding: 30px 0;
+    }
+}
+
+.p-bodygrade {
+    &__content {
+        @include setting.flexbox(3,20px,20px);
+    }
+}
+.p-beStrongSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    &__leftPara {
+        width: calc((670px * 100%) / setting.$wrap-inner);
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    &__rightImage{
+        width: calc((811px * 100%) / setting.$wrap-inner);
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: end;
+        &>div {
+            width: calc((100% /2) - 50px);
+        } &>div:nth-child(2) img {
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.p-classes {
+    @include setting.flexbox(3,0px,0px);
+    &-txt{    
+            min-height: 134px;
+            width: 100%;            
+            position: absolute;
+            bottom: 0;            
+            font-size: 45px;            
+            color: setting.$white;
+            background-color: setting.$black-op-58;  
+            span {
+                width: 100%;
+                min-height: inherit;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }      
+    }
+    &-hover-txt {
+        min-width: 555px;
+        text-align: center;
+        background-color: setting.$blue-op-80;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: none;
+        
+    }
+    &-txt:hover {
+        display: none;
+       
+    }
+    &-txt:hover + .p-classes-hover-txt {
+            display: block;
+        
+    }
+     
+
+    .read-more-btn {
+        min-width: 203px;
+        min-height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: setting.$black;
+        background-color: setting.$white;
+        border-radius: 25px;
+        
+    }
+}
